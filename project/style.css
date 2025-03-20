@@ -1,0 +1,23 @@
+body {
+    color: #ffffff;
+    margin: 0px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.imagem-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
