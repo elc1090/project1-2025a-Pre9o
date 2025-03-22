@@ -8,7 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10px;
+    padding: 20px 10px;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
 }
@@ -27,6 +27,9 @@ header {
 
 .logo img {
     max-height: 45px;
+    justify-content: center;
+    width: 121px;
+    vertical-align: top;
 }
 
 .user-icons {
@@ -62,4 +65,59 @@ header {
     width: 100%;
     max-width: 1600px;
     height: auto;
+}
+
+.header-ecommerce{
+    padding-bottom: 80px;
+    background-color: #ffffff;
+    margin: 0px 0px -60px;
+    border-bottom: #ffffff;
+}
+
+.shopping {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); 
+    gap: 30px; 
+    padding: 0;
+    list-style: none; 
+    margin: 20px;
+    justify-items: center; 
+    
+}
+
+.shopping li {
+    text-align: center; 
+    border: 0px solid #ddd; 
+    padding: 10px;
+    border-radius: 0px; 
+    border: #ffffff;
+    background-color: #fff; 
+}
+
+.shopping li img {
+    max-width: 100%; /* Imagem responsiva */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.shopping .product_title {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+    text-decoration: none;
+}
+
+.shopping .price {
+    font-size: 18px;
+    color: #000;
+    margin: 5px 0;
+}
+
+.sold-out-or-not {
+    display: block; /* Força o texto a ficar em uma nova linha */
+    font-size: 14px; /* Ajuste o tamanho da fonte, se necessário */
+    color: black; /* Cor para destacar o texto */
+    margin-top: 5px; /* Espaçamento entre o preço e o texto */
 }
