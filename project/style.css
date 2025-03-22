@@ -95,7 +95,7 @@ header {
 }
 
 .shopping li img {
-    max-width: 100%; /* Imagem responsiva */
+    max-width: 100%; 
     height: auto;
     margin-bottom: 10px;
 }
@@ -116,8 +116,17 @@ header {
 }
 
 .sold-out-or-not {
-    display: block; /* Força o texto a ficar em uma nova linha */
-    font-size: 14px; /* Ajuste o tamanho da fonte, se necessário */
-    color: black; /* Cor para destacar o texto */
-    margin-top: 5px; /* Espaçamento entre o preço e o texto */
+    display: block; 
+    font-size: 14px; 
+    color: black; 
+    margin-top: 5px;
+}
+
+.product-images-swap img {
+    width: 100%;
+    height: auto;
+}
+
+.product-images-swap .back-image {
+    display: none; 
 }
