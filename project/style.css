@@ -13,6 +13,27 @@ header {
     border-bottom: 1px solid #ddd;
 }
 
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 25px;
+    border-radius: 100%;
+    cursor: pointer;
+    display: none; 
+    opacity: 0; 
+    transform: translateY(70px); 
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; 
+}
+
+.scroll-top.show {
+    display: flex; 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
 .menu-icon {
     padding: 0px 30px;
     font-size: 30px;
@@ -103,23 +124,26 @@ header {
 .shopping .product_title {
     display: block;
     font-size: 16px;
-    font-weight: bold;
-    margin: 10px 0;
+    font-family: Roboto Mono, monospace;
+    font-weight: 400;
     color: #333;
     text-decoration: none;
 }
 
 .shopping .price {
-    font-size: 18px;
+    font-size: 16px;
+    font-family: Roboto Mono, monospace;
+    font-weight: 600;
     color: #000;
-    margin: 5px 0;
 }
 
 .sold-out-or-not {
+    font-family: Roboto Mono, monospace;
     display: block; 
     font-size: 14px; 
-    color: black; 
-    margin-top: 5px;
+    color: gray; 
+    margin-top: 25px;
+    font-weight: 700;
 }
 
 .product-images-swap img {
