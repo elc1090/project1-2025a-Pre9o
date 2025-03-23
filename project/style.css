@@ -1,3 +1,73 @@
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .menu-icon {
+        position: absolute;
+        left: 0px;
+        top: 30px;
+    }
+
+    .logo {
+        position: static; 
+        margin: 10px 0;
+    }
+
+    .user-icons {
+        position: absolute; 
+        right: 0px;
+        top: 30px;
+    }
+
+    ul.shopping {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+        padding: 0 10px;
+    }
+
+    ul.shopping li {
+        text-align: center; 
+    }
+
+    .product-images-swap img {
+        max-width: 100%; 
+        height: auto;
+    }
+
+    .product-images-swap .back-image {
+        display: none; 
+    }
+
+    .footer-instagram {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.footer-info ul {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        list-style: none; 
+        padding: 0px 20px;
+        margin: 30px;
+        font-family: Roboto Mono, monospace;
+        font-size: 16px;
+        color: #000;
+    }
+
+    .footer-copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
 body {
     color: #000;
     margin: 0;
