@@ -271,3 +271,36 @@ header {
     font-family: Roboto Mono, monospace;
     font-size: 16px;
 }
+
+.frete-gratis {
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-family: Roboto Mono, monospace;
+    font-size: 16px;
+    z-index: 1000; 
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+    margin: 0px;
+}
+
+.frete-gratis.hidden {
+    transform: translateY(100%); 
+    opacity: 0; 
+}
+
+.close-popup {
+    margin-left: 20px; 
+    font-family: Roboto Mono, monospace;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.736);
+    font-size: 16px;
+    cursor: pointer;
+}

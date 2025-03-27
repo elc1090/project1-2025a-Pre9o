@@ -34,3 +34,10 @@ scrollTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+const freteGratisPopup = document.querySelector('.frete-gratis');
+const closeFreteGratisPopup = document.querySelector('.frete-gratis .close-popup');
+
+closeFreteGratisPopup.addEventListener('click', () => {
+    freteGratisPopup.classList.add('hidden');
+});
