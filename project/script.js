@@ -21,7 +21,7 @@ const mainImage = document.querySelector('.imagem-principal');
 window.addEventListener('scroll', () => {
     const mainImageHeight = mainImage.offsetHeight;
 
-    if (window.scrollY > mainImageHeight) {
+    if (window.scrollY > mainImageHeight && freteGratisPopup.classList.contains('hidden')) {
         scrollTopButton.classList.add('show'); 
     } else {
         scrollTopButton.classList.remove('show'); 
