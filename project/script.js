@@ -58,13 +58,26 @@ const menu = document.createElement('div');
 menu.classList.add('menu');
 menu.innerHTML = `
     <ul>
-        <li><a href="#">TODOS OS PRODUTOS</a></li>
+        <li class="expandable">
+            <span class="expandable-title">
+                <span class="title-text">TODOS OS PRODUTOS ▼</span>
+            </span>
+            <ul class="sub-menu">
+                <li><a href="#">CAMISETAS</a></li>
+                <li><a href="#">CROPPED</a></li>
+                <li><a href="#">MOLETONS</a></li>
+                <li><a href="#">BONÉS</a></li>
+            </ul>
+        </li>
         <li><a href="#">TROCAS E DEVOLUÇÕES</a></li>
         <li><a href="#">SOBRE A JSMN</a></li>
     </ul>
 `;
 menu.style.display = 'none';
 document.body.appendChild(menu);
+
+const subMenu = menu.querySelector('.sub-menu');
+subMenu.style.display = 'none';
 
 menuIcon.addEventListener('click', () => {
     menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
@@ -110,4 +123,12 @@ overlay.addEventListener('click', () => {
     menu.style.display = 'none';
     cartMenu.style.display = 'none';
     hideOverlay();
+});
+
+const expandableTitle = menu.querySelector('.expandable-title');
+
+expandableTitle.addEventListener('click', () => {
+    const isExpanded = subMenu.style.display === 'block';
+    subMenu.style.display = isExpanded ? 'none' : 'block';
+    expandableTitle.querySelector('.arrow').textContent = isExpanded ? '▼' : '▲';
 });
