@@ -80,10 +80,20 @@ const subMenu = menu.querySelector('.sub-menu');
 subMenu.style.display = 'none';
 
 menuIcon.addEventListener('click', () => {
-    menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+    menu.style.display = menu.style.display === 'none' ? 'block' : 'block';
     if (menu.style.display === 'block') {
         showOverlay();
+        menu.classList.add('hide');
+        setTimeout(() => {
+            menu.classList.remove('hide'); 
+        }, 200);
+        menu.classList.add('show');
     } else {
+        menu.classList.remove('show');
+        menu.classList.add('hide');
+        setTimeout(() => {
+            menu.classList.remove('hide');
+        }, 300);
         hideOverlay();
     }
 });
@@ -100,7 +110,6 @@ cartMenu.innerHTML = `
     <div class="cart-header">
         <h2>Carrinho</h2>
         <button class="close-cart">X</button>
-        <svg class="svg-carrinho" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 21.75a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM17.25 21.75a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path><path fill-rule="evenodd" d="M0 3a.75.75 0 01.75-.75h1.577A1.5 1.5 0 013.77 3.338L4.53 6h16.256a.75.75 0 01.72.956l-2.474 8.662a2.25 2.25 0 01-2.163 1.632H7.88a2.25 2.25 0 01-2.163-1.632l-2.47-8.645a.738.738 0 01-.01-.033l-.91-3.19H.75A.75.75 0 010 3zm4.959 4.5l2.201 7.706a.75.75 0 00.721.544h8.988a.75.75 0 00.72-.544L19.792 7.5H4.96z"></path></svg>
     </div>
     <p>Seu carrinho está vazio!</p>
     <button class="btn-buscar-produtos">BUSCAR PRODUTOS</button>
@@ -109,22 +118,50 @@ cartMenu.style.display = 'none';
 document.body.appendChild(cartMenu);
 
 cartIcon.addEventListener('click', () => {
-    cartMenu.style.display = 'block';
-    showOverlay();
+    cartMenu.style.display = cartMenu.style.display === 'none' ? 'block' : 'block';
+    if (cartMenu.style.display === 'block') {
+        showOverlay();
+        cartMenu.classList.add('hide');
+        setTimeout(() => {
+            cartMenu.classList.remove('hide'); 
+        }, 200);
+        cartMenu.classList.add('show');
+    } else {
+        cartMenu.classList.remove('show');
+        cartMenu.classList.add('hide');
+        setTimeout(() => {
+            cartMenu.style.display = 'none'; 
+        }, 300);
+        hideOverlay();
+    }
 });
 
 document.querySelector('.close-cart').addEventListener('click', () => {
-    cartMenu.style.display = 'none';
+    cartMenu.classList.remove('show');
+    cartMenu.classList.add('hide');
+    setTimeout(() => {
+        cartMenu.style.display = 'none'; // Opcional: oculta após a animação
+    }, 300);
     hideOverlay();
 });
 
 overlay.addEventListener('click', () => {
-    overlay.style.display = 'none';
-    menu.style.display = 'none';
-    cartMenu.style.display = 'none';
+    if (menu.classList.contains('show')) {
+        menu.classList.remove('show');
+        menu.classList.add('hide');
+        setTimeout(() => {
+            menu.classList.remove('hide'); 
+        }, 300);
+    }
+    if (cartMenu.classList.contains('show')) {
+        cartMenu.classList.remove('show');
+        cartMenu.classList.add('hide');
+        setTimeout(() => {
+            cartMenu.style.display = 'none'; // Opcional: oculta após a animação
+        }, 300);
+    }
     hideOverlay();
 });
-
 const expandableTitle = menu.querySelector('.expandable-title');
 
 expandableTitle.addEventListener('click', () => {
