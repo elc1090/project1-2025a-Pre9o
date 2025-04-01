@@ -1,63 +1,59 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/-0GsTofh)
 # Projeto: Remake de site/app web
 
-> 1. Leia com atenção as instruções abaixo para editar este README em formato Markdown.
-> 2. Substitua todos os trechos de texto iniciados com "Substitua" por informações do seu projeto, conforme solicitado em cada trecho.
-> 3. Substitua a imagem por um screenshot do projeto (o arquivo pode ser armazenado no repositório ou em URL externa). GIFs animados também são permitidos!
-> 4. Remova todas as instruções de entrega.
-> 5. Double-check: Certifique-se de que seu README.md não contenha instruções de entrega!
-> 6. Entregue este README.md dentro da pasta raiz do seu repositório de entrega. Peça ajuda se não souber como editar ou entregar!
-> Opcional: você pode alterar a formatação do README, mas mantenha todas as informações solicitadas
 
-![Substitua a imagem ao lado por um screenshot do seu projeto](img/chops-ux-step-4.png "Screenshot do projeto. Imagem temporária extraída de https://mdswanson.com/static/chops-ux-step-4.png")
+![Substitua a imagem ao lado por um screenshot do seu projeto](img/print_site.png "Screenshot do projeto. Imagem temporária extraída de https://mdswanson.com/static/chops-ux-step-4.png")
 
 
-Acesso: Substitua este texto pela URL para acesso ao site publicado
+Acesso: [https://elc1090.github.io/project1-2025a-Pre9o/](https://elc1090.github.io/project1-2025a-Pre9o/)
 
 
 #### Desenvolvedor(a)
-Substitua este texto pela sua identificação: nome e curso
+Rafael Carneiro Pregardier, Ciência da Computação.
 
 #### Cliente
-Substitua este texto pela identificação do cliente
-
+Dionatan Eduardo Correa Rodrigues, Ciência da Computação.
 
 
 
 #### Site/app original
 
 ##### Link
-Substitua este texto pela URL do site/app escolhido
+[https://jsmn.com.br/loja/](https://jsmn.com.br/loja/)
 
 ##### Descrição
-Substitua este texto por uma descrição do site/app escolhido. Inclua observações sobre seu conteúdo, aparência e código.
+Um site simples de uma pequena loja online de roupas, feito com WooComerce, um plugin Wordpress, tem apenas uma seção com os itens dispostos para a compra.
 
-#### Demanda do(a) cliente
-Substitua este texto pela demanda do(a) cliente
+#### Demanda do(a) cliente 	
+Animações das seções entrando na tela na rolagem;
+Barra lateral da rolagem do site personalizada;
+Entregar página com responsividade para tablet e dispositivos mobile;
+Incluir botão de retornar ao topo.
 
 #### Desenvolvimento
 
-Substitua este texto por uma descrição do processo de desenvolvimento, explicando suas escolhas para o remake e etapas do trabalho (por exemplo, como foi coletado o conteúdo, como você lidou com as demandas, etc.)
+Fui verificando como é feito o site original e pensando como eu poderia replicar, percebi que o original era algo mais automático (Wordpress), então pensei em alternativas mais básicas para fazer a mesma coisa com menos código e mesmo assim atender as demandas do cliente. Para atender as demandas do cliente, tive que estudar como fazer animações usando CSS e JavaScript, além de responsividade.
 
 
 #### Tecnologias
 
-Substitua este trecho por uma lista detalhada de tecnologias usadas (tanto as básicas, como HTML e CSS, como as mais específicas, por exemplo Tailwind, etc.):
-- ...
-- ...
-- 
+- HTML.
+- CSS.
+- JavaScript.
 
 #### Ambiente de desenvolvimento
 
-Substitua este trecho por uma lista detalhada dos ambientes/ferramentas de desenvolvimento que você usou (por exemplo, VS Code + alguma extensão, etc.)
-- ...
-- ...
+- Visual Studio Code.
+- Live Preview.
+- Live Server.
+- JavaScript code snippets.
 
 #### Referências e créditos
 
-Substitua este trecho por uma lista bem detalhada de todo material que você consultou para ajudar no projeto, por exemplo:  URL de templates usados, URL de icon kits usados, créditos para colegas que colaboraram, geradores de código (incluindo alguns prompts usados para o ChatGPT, se for o caso)
-- ...
-- ...
+- https://www.devmedia.com.br/html-icons-utilizando-icones-em-paginas-html/43517
+- https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ul
+- GitHub Copilot.
+- "Copilot, como posso fazer animações simples de fade in/fade out utilizando apenas javascript e css? Dê-me exemplos."
+- "Copilot, dê-me exemplos de tags HTML que eu possa utilizar para deixar meu código mais adequado com HTML semântico."
 
 
 

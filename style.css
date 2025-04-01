@@ -125,7 +125,14 @@ svg {
     list-style: none; 
     margin: 20px;
     justify-items: center; 
-    
+    opacity: 0; 
+    transform: translateY(150px);
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.shopping.visible {
+    opacity: 1; 
+    transform: translateY(0); 
 }
 
 .shopping li {

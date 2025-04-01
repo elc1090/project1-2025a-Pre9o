@@ -169,3 +169,18 @@ expandableTitle.addEventListener('click', () => {
     subMenu.style.display = isExpanded ? 'none' : 'block';
     expandableTitle.querySelector('.arrow').textContent = isExpanded ? '▼' : '▲';
 });
+
+const shoppingSection = document.querySelector('.shopping');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            shoppingSection.classList.add('visible'); // Adiciona a classe para animar
+            observer.unobserve(shoppingSection); // Para de observar após a animação
+        }
+    });
+}, {
+    threshold: 0.1 // Ativa quando 10% da div estiver visível
+});
+
+observer.observe(shoppingSection);
